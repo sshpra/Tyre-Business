@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router";
 import { Users, Target, TrendingUp, Heart, MapPin, ArrowRight, Phone } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -120,8 +121,8 @@ export function About() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1583773113662-aa9af3d874c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhdXRvbW90aXZlJTIwd29ya3Nob3B8ZW58MXx8fHwxNzcwODc1MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Modern workshop"
+                src="/OIP%20(3).jpg"
+                alt="Our story"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 to-transparent" />

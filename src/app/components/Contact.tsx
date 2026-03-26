@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle, CreditCard } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -6,6 +6,8 @@ import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 
 export function Contact() {
+  const googleMapsUrl = "https://maps.google.com/?q=25.913816,93.724701";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -233,16 +235,23 @@ export function Contact() {
 
         {/* Map Section */}
         <div className="mt-16">
-          <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-2xl border border-zinc-700 p-4 h-96 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="size-16 text-orange-500 mx-auto mb-4" />
+          <div className="bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 rounded-2xl border border-zinc-700 p-4">
+            <div className="mb-4 text-center">
               <h3 className="text-2xl font-bold mb-2">Visit Our Store</h3>
               <p className="text-zinc-400">
                 I Vikheshe Sumi Road, Dimapur, Nagaland - 797112
               </p>
-              <p className="text-sm text-zinc-500 mt-2">
-                Map integration would go here
-              </p>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-zinc-700 h-96">
+              <iframe
+                title="Store Location Map"
+                src="https://maps.google.com/maps?q=25.913816,93.724701&z=15&output=embed"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
             </div>
           </div>
         </div>

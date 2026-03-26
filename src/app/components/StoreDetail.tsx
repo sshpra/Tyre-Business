@@ -100,6 +100,11 @@ export function StoreDetail() {
                     <br />
                     {store.city}, {store.state} {store.zip}
                   </p>
+                  {store.coordinatesLabel ? (
+                    <p className="text-zinc-500 text-sm mt-2 font-mono">
+                      {store.coordinatesLabel}
+                    </p>
+                  ) : null}
                 </div>
               </div>
               <div className="flex items-start gap-3">

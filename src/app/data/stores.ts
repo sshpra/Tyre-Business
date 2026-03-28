@@ -60,7 +60,7 @@ export const stores: Store[] = [
     gst: "13AUQPS7121L3Z4",
     shortDescription: "Premium tyres and expert service",
     fullDescription: "This New Gold Star Tyres location offers the full range of our products with specialized services including fitting, balancing, and alignment. Our team is dedicated to helping you find the right tyres for your vehicle and driving needs.",
-    images: [shop3Img, shop2Img, shop5Img],
+    images: ["/shop3.png", shop2Img, shop5Img],
     address: "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
     city: "Kohima",
     state: "Nagaland",

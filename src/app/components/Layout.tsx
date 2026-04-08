@@ -1,10 +1,14 @@
-import { Outlet, Link, useLocation } from "react-router";
-import { Menu, X, Gauge } from "lucide-react";
+import { Outlet, Link, useLocation, useNavigate } from "react-router";
+import { Menu, X, Gauge, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Show back button on store detail pages (e.g. /stores/downtown)
+  const isStoreDetail = /^\/stores\/[^/]+$/.test(location.pathname);
 
   const isActive = (path: string) => {
     if (path === "/") return location.pathname === "/";
@@ -15,6 +19,7 @@ export function Layout() {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/collection", label: "Collection" },
+    { path: "/stores", label: "Our Stores" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -24,6 +29,17 @@ export function Layout() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-800">
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
+            {/* Back button (store detail pages only) */}
+            {isStoreDetail && (
+              <button
+                onClick={() => navigate(-1)}
+                className="flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors mr-4"
+              >
+                <ArrowLeft className="size-5" />
+                <span className="text-sm font-medium">Back</span>
+              </button>
+            )}
+
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 group">
               <div className="relative">

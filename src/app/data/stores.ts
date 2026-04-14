@@ -193,46 +193,4 @@ export const stores: Store[] = [
       },
     ],
   },
-  {
-    id: "queens",
-    name: "Kohima Tyres",
-    gst: "13ATGPT0101J1Z3",
-    shortDescription: "Full-service tyre centre",
-    fullDescription:
-      "Kohima Tyres serves as a full-service retail store with a wide selection of premium tyres. Our showroom displays the complete product range, and our service bays handle everything from basic tyre changes to wheel repairs. Open for your convenience.",
-    images: [shop5Img, shop3Img, shop4Img],
-    address:
-      "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
-    city: "Kohima",
-    state: "Nagaland",
-    zip: "797001",
-    phone: "6909318959",
-    coordinatesLabel: "25.683825°N, 94.104774°E",
-    mapEmbedUrl:
-      "https://maps.google.com/maps?q=25.683825,94.104774&z=17&hl=en&output=embed",
-    story:
-      "Kohima Tyres is our full-service flagship — think of it as a one-stop tyre destination. Beyond sales, we operate a complete service centre capable of handling wheel balancing, alignment, puncture repairs, and even alloy wheel refurbishment. The spacious showroom lets you see and touch every product before you buy, and our transparent service area means you can watch our technicians at work. If you're looking for a store that does it all, Kohima Tyres is the place.",
-    whyChooseUs: [
-      {
-        title: "Complete Service Centre",
-        description:
-          "Sales, fitting, balancing, alignment, and repairs — all under one roof.",
-      },
-      {
-        title: "Walk-In Showroom",
-        description:
-          "See and compare tyres in person before making a decision.",
-      },
-      {
-        title: "Alloy Wheel Repairs",
-        description:
-          "Kerb damage? We restore alloys to near-factory condition.",
-      },
-      {
-        title: "Extended Hours",
-        description:
-          "Open early and late for your convenience, including weekends.",
-      },
-    ],
-  },
 ];

@@ -58,13 +58,13 @@ export function About() {
       <section className="py-16 bg-zinc-900/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">We have 5 stores</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">We have 4 stores</h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
               Visit any of our locations for expert service and premium tyres
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto max-w-6xl">
             {stores.map((store) => (
               <Link
                 key={store.id}

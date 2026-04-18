@@ -143,7 +143,7 @@ export function Layout() {
               <ul className="space-y-2 text-zinc-400">
                 <li>I Vikheshe Sumi Road, Dimapur</li>
                 <li>Nagaland - 797112</li>
-                <li>Phone: 9612154551</li>
+                <li>Phone: +91-9612154551</li>
                 <li>Email: info@tyremax.com</li>
               </ul>
             </div>

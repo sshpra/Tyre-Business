@@ -172,6 +172,7 @@ export function Collection() {
   const [selectedType, setSelectedType] = useState<string>("all");
   const maxCardsToShow = 8;
 
+  const whatsappNumber = "+91-9612154551";
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSd8X0pODh4kk-OgVHF_kfYOmKbj9XsXrK1yHPpHuv1QCIcxtg/viewform?usp=publish-editor";
 
   const filteredTyres = tyres.filter((tyre) => {
@@ -190,10 +191,15 @@ export function Collection() {
 
   const displayedTyres = filteredTyres.slice(0, maxCardsToShow);
 
-  const handleInquire = (_tyre: Tyre) => {
-    if (googleFormUrl) {
-      window.open(googleFormUrl, "_blank", "noopener,noreferrer");
-    }
+  const handleBuyNow = (tyre: Tyre) => {
+    const message = `Hello, I want to buy the ${tyre.brand} ${tyre.model} (${tyre.size}).`;
+    const cleanNumber = whatsappNumber.replace(/[\+\-\s]/g, ''); // Remove +, -, and spaces
+    const url = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const handleInquire = (tyre: Tyre) => {
+    window.open(googleFormUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -315,18 +321,17 @@ export function Collection() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between pt-4 border-t border-zinc-700">
-                  <div>
-                    <span className="text-2xl font-bold text-orange-500">
-                      ${tyre.price}
-                    </span>
-                    <span className="text-zinc-400 text-sm">/each</span>
-                  </div>
+                <div className="flex flex-col sm:flex-row items-stretch gap-3 pt-4 border-t border-zinc-700">
                   <Button
+                    onClick={() => handleBuyNow(tyre)}
+                    className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 hover:shadow-lg hover:shadow-orange-500/50"
+                  >
+                    Buy Now
+                  </Button>
+                  <Button
+                    variant="secondary"
                     onClick={() => handleInquire(tyre)}
-                    disabled={!googleFormUrl}
-                    title={!googleFormUrl ? "Add VITE_GOOGLE_FORM_URL to .env" : "Open inquiry form"}
-                    className="bg-gradient-to-r from-orange-500 to-red-500 hover:shadow-lg hover:shadow-orange-500/50"
+                    className="flex-1 border border-zinc-700 bg-zinc-900 text-white hover:border-orange-500 hover:text-orange-500"
                   >
                     Inquire
                   </Button>

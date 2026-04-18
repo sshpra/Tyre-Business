@@ -122,7 +122,7 @@ export function TyreInquiryForm({ tyre, isOpen, onClose }: TyreInquiryFormProps)
                     onChange={handleChange}
                     required
                     className="bg-zinc-800 border-zinc-700 text-white"
-                    placeholder="9612154551"
+                    placeholder="+91-9612154551"
                   />
                 </div>
 

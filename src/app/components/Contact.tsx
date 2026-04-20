@@ -55,7 +55,7 @@ export function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: "+91-9612154551",
+      details: "+91-7005564025",
       subdetails: "Mon-Fri 8am-6pm, Sat 9am-4pm",
     },
     {
@@ -181,7 +181,7 @@ export function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="bg-zinc-800 border-zinc-700 text-white"
-                        placeholder="+91-9612154551"
+                        placeholder="+91-7005564025"
                       />
                     </div>
 

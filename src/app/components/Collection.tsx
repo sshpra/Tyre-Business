@@ -172,7 +172,7 @@ export function Collection() {
   const [selectedType, setSelectedType] = useState<string>("all");
   const maxCardsToShow = 8;
 
-  const whatsappNumber = "+91-9612154551";
+  const whatsappNumber = "+91-7005564025";
   const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSd8X0pODh4kk-OgVHF_kfYOmKbj9XsXrK1yHPpHuv1QCIcxtg/viewform?usp=publish-editor";
 
   const filteredTyres = tyres.filter((tyre) => {

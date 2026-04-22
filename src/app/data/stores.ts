@@ -35,10 +35,10 @@ export const stores: Store[] = [
       "New Gold Star Tyre has been serving the community with the complete range of premium tyres. This location offers a fully equipped service bay for tyre fitting, balancing, and alignment. Our experienced team provides personalized recommendations and same-day service for most requests.",
     images: [shop1Img, shop2Img, shop4Img],
     address:
-      "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
-    city: "Kohima",
+      "NH36, Khermahal, Dimapur",
+    city: "Dimapur",
     state: "Nagaland",
-    zip: "797001",
+    zip: "797112",
     phone: "7005996467",
     coordinatesLabel: `25°40'12.7"N 94°05'44.2"E`,
     mapEmbedUrl:
@@ -77,10 +77,10 @@ export const stores: Store[] = [
       "Tyre Plaza caters to customers with an extensive selection of premium passenger and SUV tyres. We focus on quick turnaround times and maintain high standards of quality and customer service. Visit us for expert advice and competitive pricing.",
     images: [shop2Img, shop1Img, shop5Img],
     address:
-      "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
-    city: "Kohima",
+      "Khermahal, Dimapur",
+    city: "Dimapur",
     state: "Nagaland",
-    zip: "797001",
+    zip: "797112",
     phone: "6909318281",
     coordinatesLabel: `25°40'12.7"N 94°05'44.2"E`,
     mapEmbedUrl:
@@ -119,11 +119,11 @@ export const stores: Store[] = [
       "This New Gold Star Tyres location brings our commitment to quality and customer satisfaction. We offer the full range of our tyre inventory with dependable service and expert advice for families, commuters, and businesses.",
     images: [shop4Img, shop1Img, shop3Img],
     address:
-      "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
+      "Upper Bayavu Hill, Kohima",
     city: "Kohima",
     state: "Nagaland",
     zip: "797001",
-    phone: "6909318805",
+    phone: "6909318891",
     coordinatesLabel: `25°40'12.7"N 94°05'44.2"E`,
     mapEmbedUrl:
       "https://www.google.com/maps?q=25%C2%B040'12.7%22N+94%C2%B005'44.2%22E&z=17&hl=en&output=embed",
@@ -161,7 +161,7 @@ export const stores: Store[] = [
       "Kohima Tyres serves as a full-service retail store with a wide selection of premium tyres. Our showroom displays the complete product range, and our service bays handle everything from basic tyre changes to wheel repairs. Open for your convenience.",
     images: [shop5Img, shop3Img, shop4Img],
     address:
-      "Ground Floor, Middle, Bayavu Hill Rd, near Axis Bank, Upper Bayavü Hill",
+      "006B, Naga Hospital Rd, near Kohima Hospital, Hospital Colony, Kohima",
     city: "Kohima",
     state: "Nagaland",
     zip: "797001",
